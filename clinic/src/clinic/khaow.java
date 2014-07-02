@@ -4,21 +4,13 @@
  * and open the template in the editor.
  */
 
-package khaow;
+package clinic;
 
 /**
  *
  * @author Administrator
  */
-public class Khaow {
-
+public class khaow {
     String name ="Arporn Krumram" ;
     String stuid ="55021463" ;
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-       
-    }
-    
 }
