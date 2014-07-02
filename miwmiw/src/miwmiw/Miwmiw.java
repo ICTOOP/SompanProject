@@ -12,6 +12,8 @@ package miwmiw;
  */
 public class Miwmiw {
 
+    String  name = "Nattanan Tarsook" ;
+    String stuid ="55025681" ;
     /**
      * @param args the command line arguments
      */
