@@ -12,11 +12,13 @@ package khaow;
  */
 public class Khaow {
 
+    String name ="Arporn Krumram" ;
+    String stuid ="55021463" ;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+       
     }
     
 }
