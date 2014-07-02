@@ -12,6 +12,10 @@ package javaapplication3;
  */
 public class JavaApplication3 {
 
+   
+    String name = "Sornsawan panpiwong";
+    String stuid = "55024523";        
+
     /**
      * @param args the command line arguments
      */
