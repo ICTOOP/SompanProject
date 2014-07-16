@@ -3,8 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 package clinic;
+
+import java.awt.CardLayout;
+import java.awt.Container;
+import javax.swing.JFrame;
 
 /**
  *
@@ -17,6 +20,7 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
@@ -38,6 +42,7 @@ public class Home extends javax.swing.JFrame {
         jEditorPane1 = new javax.swing.JEditorPane();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu10 = new javax.swing.JMenu();
+        customeradd = new clinic.addcustomer();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -68,6 +73,8 @@ public class Home extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 153, 255));
+        getContentPane().setLayout(new java.awt.CardLayout());
+        getContentPane().add(customeradd, "card2");
 
         jMenu1.setText("Home");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -121,17 +128,6 @@ public class Home extends javax.swing.JFrame {
 
         setJMenuBar(jMenuBar1);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 658, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
-        );
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -149,12 +145,14 @@ public class Home extends javax.swing.JFrame {
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
-       MemberData m=new MemberData();
-       m.setVisible(true);
+        Container container = this.getContentPane();
+        CardLayout cardLayout = (CardLayout) container.getLayout();
+        cardLayout.show(container, "customeradd");
+        this.setTitle("Add Customer");
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
+      
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
@@ -193,6 +191,7 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private clinic.addcustomer customeradd;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
