@@ -20,7 +20,11 @@ public class Home extends javax.swing.JFrame {
      */
     public Home() {
         initComponents();
-        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+         this.setExtendedState(JFrame.MAXIMIZED_BOTH);
+         Container container = this.getContentPane();
+        CardLayout cardLayout = (CardLayout) container.getLayout();
+        cardLayout.show(container, "homepage");
+        this.setTitle("Home Page");
     }
 
     /**
@@ -42,7 +46,9 @@ public class Home extends javax.swing.JFrame {
         jEditorPane1 = new javax.swing.JEditorPane();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu10 = new javax.swing.JMenu();
-        customeradd = new clinic.addcustomer();
+        addcustomer2 = new clinic.addcustomer();
+        customerdata2 = new clinic.customerdata();
+        homepage3 = new clinic.homepage();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -74,7 +80,21 @@ public class Home extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(204, 153, 255));
         getContentPane().setLayout(new java.awt.CardLayout());
-        getContentPane().add(customeradd, "card2");
+        getContentPane().add(addcustomer2, "customeradd");
+        getContentPane().add(customerdata2, "customerdata");
+
+        javax.swing.GroupLayout homepage3Layout = new javax.swing.GroupLayout(homepage3);
+        homepage3.setLayout(homepage3Layout);
+        homepage3Layout.setHorizontalGroup(
+            homepage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 645, Short.MAX_VALUE)
+        );
+        homepage3Layout.setVerticalGroup(
+            homepage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 384, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(homepage3, "homepage");
 
         jMenu1.setText("Home");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -133,6 +153,10 @@ public class Home extends javax.swing.JFrame {
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
         // TODO add your handling code here:
+        Container container = this.getContentPane();
+        CardLayout cardLayout = (CardLayout) container.getLayout();
+        cardLayout.show(container, "homepage");
+        this.setTitle("Home Page");
     }//GEN-LAST:event_jMenu1ActionPerformed
 
     private void jMenu2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu2ActionPerformed
@@ -147,12 +171,15 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
         Container container = this.getContentPane();
         CardLayout cardLayout = (CardLayout) container.getLayout();
-        cardLayout.show(container, "customeradd");
-        this.setTitle("Add Customer");
+        cardLayout.show(container, "customerdata");
+        this.setTitle("Customer Data");
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-      
+       Container container = this.getContentPane();
+        CardLayout cardLayout = (CardLayout) container.getLayout();
+        cardLayout.show(container, "customeradd");
+        this.setTitle("Add Customer");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     /**
@@ -191,7 +218,9 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private clinic.addcustomer customeradd;
+    private clinic.addcustomer addcustomer2;
+    private clinic.customerdata customerdata2;
+    private clinic.homepage homepage3;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
