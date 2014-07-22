@@ -49,14 +49,18 @@ public class Home extends javax.swing.JFrame {
         addcustomer2 = new clinic.addcustomer();
         customerdata2 = new clinic.customerdata();
         homepage3 = new clinic.homepage();
+        addtreatment2 = new clinic.addtreatment();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenu7 = new javax.swing.JMenu();
-        jMenu8 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
         jMenu9 = new javax.swing.JMenu();
+        jMenuItem8 = new javax.swing.JMenuItem();
+        jMenuItem9 = new javax.swing.JMenuItem();
         jMenu11 = new javax.swing.JMenu();
 
         jMenu3.setText("File");
@@ -91,10 +95,11 @@ public class Home extends javax.swing.JFrame {
         );
         homepage3Layout.setVerticalGroup(
             homepage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 384, Short.MAX_VALUE)
+            .addGap(0, 407, Short.MAX_VALUE)
         );
 
         getContentPane().add(homepage3, "homepage");
+        getContentPane().add(addtreatment2, "addtreatment");
 
         jMenu1.setText("Home");
         jMenu1.addActionListener(new java.awt.event.ActionListener() {
@@ -129,18 +134,34 @@ public class Home extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu2);
 
-        jMenu7.setText("Treatment");
+        jMenu7.setText("Treatment&Payment");
         jMenu7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenu7ActionPerformed(evt);
             }
         });
+
+        jMenuItem4.setText("Add Treatment&Payment Data");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu7.add(jMenuItem4);
+
+        jMenuItem5.setText("Treatment&Payment Data");
+        jMenu7.add(jMenuItem5);
+
         jMenuBar1.add(jMenu7);
 
-        jMenu8.setText("Payment");
-        jMenuBar1.add(jMenu8);
-
         jMenu9.setText("Other");
+
+        jMenuItem8.setText("Add Employee Data");
+        jMenu9.add(jMenuItem8);
+
+        jMenuItem9.setText("Add Doctor Data");
+        jMenu9.add(jMenuItem9);
+
         jMenuBar1.add(jMenu9);
 
         jMenu11.setText("About Us");
@@ -182,6 +203,14 @@ public class Home extends javax.swing.JFrame {
         this.setTitle("Add Customer");
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        Container container = this.getContentPane();
+        CardLayout cardLayout = (CardLayout) container.getLayout();
+        cardLayout.show(container, "addtreatment");
+        this.setTitle("Add Treatment&Payment");
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -219,6 +248,7 @@ public class Home extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private clinic.addcustomer addcustomer2;
+    private clinic.addtreatment addtreatment2;
     private clinic.customerdata customerdata2;
     private clinic.homepage homepage3;
     private javax.swing.JEditorPane jEditorPane1;
@@ -231,7 +261,6 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenu jMenu7;
-    private javax.swing.JMenu jMenu8;
     private javax.swing.JMenu jMenu9;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
@@ -239,6 +268,10 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem8;
+    private javax.swing.JMenuItem jMenuItem9;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 }
