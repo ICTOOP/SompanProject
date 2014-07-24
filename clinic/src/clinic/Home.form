@@ -173,21 +173,21 @@
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignCardLayout"/>
   <SubComponents>
-    <Component class="clinic.addcustomer" name="addcustomer2">
+    <Component class="clinic.Jpanel.addcustomer" name="addcustomer2">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
           <CardConstraints cardName="customeradd"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="clinic.customerdata" name="customerdata2">
+    <Component class="clinic.Jpanel.customerdata" name="customerdata2">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
           <CardConstraints cardName="customerdata"/>
         </Constraint>
       </Constraints>
     </Component>
-    <Container class="clinic.homepage" name="homepage3">
+    <Container class="clinic.Jpanel.homepage" name="homepage3">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
           <CardConstraints cardName="homepage"/>
@@ -207,7 +207,7 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Component class="clinic.addtreatment" name="addtreatment2">
+    <Component class="clinic.Jpanel.addtreatment" name="addtreatment2">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignCardLayout" value="org.netbeans.modules.form.compat2.layouts.DesignCardLayout$CardConstraintsDescription">
           <CardConstraints cardName="addtreatment"/>

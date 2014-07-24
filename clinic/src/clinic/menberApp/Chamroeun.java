@@ -4,14 +4,15 @@
  * and open the template in the editor.
  */
 
-package clinic;
+package clinic.menberApp;
+
+import clinic.*;
 
 /**
  *
  * @author Administrator
  */
-public class miw {
-  
-    String name ="Nattanan Tarsook" ;
-    String stuid = "55025681";
+public class Chamroeun {
+    String name="Chamroeun Chhun";
+    String stuid="55026121";
 }

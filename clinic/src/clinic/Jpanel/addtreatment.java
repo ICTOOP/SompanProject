@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package clinic;
+package clinic.Jpanel;
 
 /**
  *
@@ -64,8 +64,6 @@ public class addtreatment extends javax.swing.JPanel {
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
                 {null, null, null, null}
             },
             new String [] {
@@ -115,13 +113,12 @@ public class addtreatment extends javax.swing.JPanel {
                             .addComponent(jTextField5)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(90, 90, 90)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(23, 23, 23)
-                                .addComponent(jButton1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton2)))))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(103, 103, 103)
+                        .addComponent(jButton1)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton2)))
                 .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -156,12 +153,12 @@ public class addtreatment extends javax.swing.JPanel {
                     .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8))
                 .addGap(19, 19, 19)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(103, 103, 103)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
-                .addContainerGap(278, Short.MAX_VALUE))
+                    .addComponent(jButton2)
+                    .addComponent(jButton1))
+                .addContainerGap(240, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 

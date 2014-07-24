@@ -46,10 +46,10 @@ public class Home extends javax.swing.JFrame {
         jEditorPane1 = new javax.swing.JEditorPane();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenu10 = new javax.swing.JMenu();
-        addcustomer2 = new clinic.addcustomer();
-        customerdata2 = new clinic.customerdata();
-        homepage3 = new clinic.homepage();
-        addtreatment2 = new clinic.addtreatment();
+        addcustomer2 = new clinic.Jpanel.addcustomer();
+        customerdata2 = new clinic.Jpanel.customerdata();
+        homepage3 = new clinic.Jpanel.homepage();
+        addtreatment2 = new clinic.Jpanel.addtreatment();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -247,10 +247,10 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private clinic.addcustomer addcustomer2;
-    private clinic.addtreatment addtreatment2;
-    private clinic.customerdata customerdata2;
-    private clinic.homepage homepage3;
+    private clinic.Jpanel.addcustomer addcustomer2;
+    private clinic.Jpanel.addtreatment addtreatment2;
+    private clinic.Jpanel.customerdata customerdata2;
+    private clinic.Jpanel.homepage homepage3;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu10;
